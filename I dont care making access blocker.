@@ -1,0 +1,32 @@
+// Create elements
+const body = document.body;
+const title = document.createElement('h1');
+const searchBar = document.createElement('input');
+const addButton = document.createElement('button');
+
+// Set styles for body
+body.style.backgroundColor = 'black';
+body.style.display = 'flex';
+body.style.flexDirection = 'column';
+body.style.alignItems = 'center';
+body.style.justifyContent = 'center';
+body.style.height = '100vh';
+
+// Set styles and content for title
+title.textContent = 'AccessUnblocker';
+title.style.color = 'white';
+title.style.fontSize = '2em';
+
+// Set attributes and styles for search bar
+searchBar.setAttribute('placeholder', 'search bing or type a url');
+searchBar.setAttribute('type', 'text');
+searchBar.style.marginTop = '20px';
+
+// Set content and styles for add button
+addButton.textContent = '+';
+addButton.style.marginTop = '20px';
+
+// Append elements to body
+body.appendChild(title);
+body.appendChild(searchBar);
+body.appendChild(addButton);
